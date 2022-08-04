@@ -1,0 +1,79 @@
+### 회원가입
+POST http://localhost:3000/signup
+Content-Type: application/json
+
+{
+    "nickname": "sparta1",
+    "password": "1234",
+    "confirm": "1234"
+}
+
+### 로그인
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{  
+    "nickname": "sparta1",
+    "password": "1234"
+}
+
+
+### 게시글 작성 셍성
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+    "title": "test",
+    "content": "543"
+}
+    
+    
+### 게시글 모두 조회 불러오는 (주소창)
+GET http://localhost:3000/posts
+
+### 특정 게시글 상세 조회
+GET http://localhost:3000/posts/1
+
+### 게시글 수정
+PUT http://localhost:3000/posts/2
+Content-Type: application/json
+
+{ 
+    "title": "안녕하세요3",
+    "content": "이런저런 글입니다33333 안녕히계세요~~" 
+}
+
+### 게시글 삭제
+DELETE http://localhost:3000/posts/1
+Content-Type: application/json
+
+
+
+### 특정 게시글에 댓글 작성 
+POST http://localhost:3000/comments/62e751a8aeaad067d72d67ac
+Content-Type: application/json
+
+{
+    "comment": "댓글"
+}
+    
+### 특정 게시글의 댓글 조회
+GET http://localhost:3000/comments/62e751a8aeaad067d72d67ac
+
+### 댓글 수정
+PUT http://localhost:3000/comments/62e75236aeaad067d72d67bd
+Content-Type: application/json
+
+{ 
+    "comment": "댓글 수정"
+}
+
+### 댓글 삭제 
+DELETE http://localhost:3000/comments/62e1e99b10eabc058cedf46f
+Content-Type: application/json
+
+{ 
+    "password": "1234"
+}	
+
+
